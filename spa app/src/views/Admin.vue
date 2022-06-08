@@ -77,9 +77,15 @@ export default {
     },
 
     redirectAppeal(appeal) {
+      if (!this.department) {
+        return alert('Для начала вы должны выбрать отдел!')
+      }
+
       const translatedAppeal = { ...appeal, department: this.department };
       this.getTranslatedAppeals(translatedAppeal);
       this.updateAppeals(appeal);
+
+      this.department = "";
     },
   },
 

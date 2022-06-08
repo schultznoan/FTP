@@ -23,6 +23,7 @@
             label="Пароль*"
             placeholder="Введите свой пароль"
             variant="outlined"
+            type="password"
             :rules="[rules.required, rules.min]"
           />
         </v-col>

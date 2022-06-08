@@ -64,9 +64,9 @@ export default {
       },
       appeal: {
         id: Date.now(),
-        name: '',
-        cab: '',
-        text: '',
+        name: ' ',
+        cab: ' ',
+        text: ' ',
       },
     };
   },
